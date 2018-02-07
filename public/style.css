@@ -1,0 +1,11 @@
+body{
+  padding-top: 100px;
+}
+
+#message-container{
+  margin-top: 20px;
+}
+
+#message-container > div{
+  margin-bottom: 10px;
+}

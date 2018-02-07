@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/style.css')
+	body
+		nav.navbar.navbar-inverse.navbar-fixed-top
+			.container
+				#navbar.collapse.navbar-collapse
+					ul.nav.navbar-nav
+						li.active
+							a(href='/') Home
+						li
+							a(href='/chat') Chat
+		.container.chat-container
+			.main-content
+				block content

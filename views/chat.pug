@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	script(src='/socket.io/socket.io.js')
+	script(src="scripts.js")
+	h1 Chat
+	.row
+		.col-md-12
+			#error
+			.form
+				.form-group
+					label(for="name")
+					input.form-control#name(type="text", placeholder="Введи свое имя")
+				button.btn.btn-primary(type="submit", name="button", onclick="setUserName()") Далее
